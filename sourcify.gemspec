@@ -12,8 +12,9 @@ Gem::Specification.new do |s|
   s.summary     = %q{Workarounds before ruby-core officially supports Proc#to_source (& friends)}
   s.description = %q{}
 
-  s.add_dependency 'file-tail', '>= 1.0.5'
-  s.add_development_dependency 'bacon'
+  s.add_dependency 'file-tail', '>= 1.0.7'
+  s.add_dependency 'method_source', '>= 0.6.6'
+  s.add_development_dependency 'bacon', '>= 1.1.0'
 
   s.files            = `git ls-files`.split("\n")
   s.test_files       = `git ls-files -- spec/*`.split("\n")
